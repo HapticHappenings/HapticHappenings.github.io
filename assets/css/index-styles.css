@@ -1,0 +1,54 @@
+#sketch-container, canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+p {
+  background: rgba(255,255,255,0.97);
+  min-width: 100%;
+  text-align: center;
+  color: #db5626;
+  font-size: 1.5rem;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+h1 {
+  color: var(--bs-light-bg-subtle);
+  background-color: #db5626;
+  padding: 5px 5vw;
+  border-radius: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  max-width: min(90vw, 800px);
+}
+
+#title-banner {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+#nav-button-container {
+  width: 100%;
+  margin: 5vh 0px;
+}
+
+.nav-button-link {
+  width: 75%;
+}
+
+@media (min-width: 992px) {
+  .nav-button-link {
+    width: 25%;
+  }
+}
+
+.image-button {
+  width: 100%;
+}
+

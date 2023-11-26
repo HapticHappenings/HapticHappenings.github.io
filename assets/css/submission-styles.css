@@ -1,0 +1,63 @@
+#sketch-container, canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+main {
+  max-width: min(90vw, 800px);
+  /*background: #2f4a63;*/
+}
+
+p {
+  background: rgba(255,255,255,0.97);
+  min-width: 100%;
+  text-align: center;
+  color: #db5626;
+  font-size: 1.5rem;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+h1, a {
+  margin: 20px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: var(--bs-light-bg-subtle);
+  background-color: #db5626;
+  padding: 5px 5vw;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+a {
+  color: var(--bs-light-bg-subtle);
+  background-color: #2f4a63;
+  font-size: 2.2rem;
+  padding: 5px 5vw;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgba(255,255,255,0.97);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #db5626;
+  border-color: #db5626;
+}
+
+.figure-img {
+  max-height: 80vh;
+}
+
+.figure-caption {
+  color: #ffffff;
+  background-color: #2f4a63;
+  font-size: 1rem;
+  text-align: center;
+}
+
