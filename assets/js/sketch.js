@@ -6,11 +6,23 @@ var handImages = [];
 var tracks = [];
 
 function preload() {
-  gutterImage = loadImage('sketch-images/gutter1.png');
+  // // local access
+  // gutterImage = loadImage('sketch-images/gutter1.png');
+
+  // let handIndex = 5;
+  // while (handIndex >= 0) {
+  //   let tempHandImage = loadImage('sketch-images/hand-' + handIndex + '.png')
+  //   handImages.push(tempHandImage);
+  //   handIndex--;
+  // }
+
+  // production access
+  gutterImage = loadImage('assests/img/sketch-images/gutter1.png');
 
   let handIndex = 5;
   while (handIndex >= 0) {
-    let tempHandImage = loadImage('sketch-images/hand-' + handIndex + '.png')
+    let tempHandImage =
+        loadImage('assests/img/sketch-images/hand-' + handIndex + '.png')
     handImages.push(tempHandImage);
     handIndex--;
   }
