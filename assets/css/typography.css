@@ -1,3 +1,7 @@
+body {
+  background-color: #2f4a63;
+}
+
 h1 {
   color: var(--bs-light-bg-subtle);
   background-color: #db5626;

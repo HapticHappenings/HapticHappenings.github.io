@@ -19,7 +19,7 @@ function preload() {
 
 function setup() {
   // environment
-  let c = createCanvas(windowWidth, windowHeight)
+  let c = createCanvas(windowWidth, windowHeight * 1.2)
   let node = document.getElementById('sketch-container');
   c.parent(node);
   imageMode(CENTER);
