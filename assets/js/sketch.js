@@ -6,17 +6,6 @@ var handImages = [];
 var tracks = [];
 
 function preload() {
-  // // local access
-  // gutterImage = loadImage('sketch-images/gutter1.png');
-
-  // let handIndex = 5;
-  // while (handIndex >= 0) {
-  //   let tempHandImage = loadImage('sketch-images/hand-' + handIndex + '.png')
-  //   handImages.push(tempHandImage);
-  //   handIndex--;
-  // }
-
-  // production access
   gutterImage = loadImage('assets/img/sketch-images/gutter1.png');
 
   let handIndex = 5;
@@ -35,7 +24,7 @@ function setup() {
   c.parent(node);
   imageMode(CENTER);
 
-  // image initialization
+  // image sizing and positioning
   gutterImage.resize(0, height * 1.2);
   handImages.forEach(h => h.resize(200, 0))
   let gutterMargin = min(width * 0.1, 100);
@@ -45,14 +34,18 @@ function setup() {
     gutterOffset = gutterMargin - gutterImage.width / 2;
   }
 
-  // debugger;
-  let trackY = 0;
+//track initializing
+    let trackY = 0;
   while (trackY < height) {
     let trackHeight = random(40, 60);
     let newTrack = new Track(trackY, trackHeight, 0);
     tracks.push(newTrack);
     trackY += trackHeight;
   }
+    let counter = 900;
+    while(counter--){
+        tracks.forEach(t=>t.step())
+    }
 }
 
 function draw() {
