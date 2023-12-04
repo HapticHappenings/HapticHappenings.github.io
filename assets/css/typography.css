@@ -30,6 +30,15 @@ p {
   border-radius: 30px;
 }
 
+.example-artist-link {
+  text-decoration: underline;
+  color: #db5626;
+}
+
+.example-artist-link:hover {
+  color: #2f4a63;
+}
+
 .submision-form-link {
   color: var(--bs-light-bg-subtle);
   background-color: #2f4a63;
@@ -49,7 +58,7 @@ p {
   border-color: #db5626;
 }
 
-.team-bio {
+.left-aligned-text {
   text-align: left;
 }
 
