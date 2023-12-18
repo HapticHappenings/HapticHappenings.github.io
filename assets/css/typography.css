@@ -11,6 +11,7 @@ h1 {
   width: 100%;
   text-align: center;
   margin: 20px 0px;
+  font-family: 'Raleway';
 }
 
 h2 {
@@ -19,9 +20,8 @@ h2 {
   padding: 5px 20px;
   border-radius: 15px;
   text-decoration: none;
-  /*width: 100%;*/
   text-align: center;
-  margin: 20px 0px;
+  font-family: 'Raleway';
 }
 
 p {
@@ -32,6 +32,17 @@ p {
   font-size: 1.5rem;
   padding: 20px;
   border-radius: 30px;
+  font-family: 'Montserrat';
+}
+
+.paragraph-link {
+  color: #2f4a63;
+  font-size: 1.5rem;
+  font-family: 'Montserrat';
+}
+
+.paragraph-link:hover {
+  color: #db5626;
 }
 
 .example-artist-link {
@@ -47,6 +58,7 @@ p {
   color: var(--bs-light-bg-subtle);
   background-color: #2f4a63;
   font-size: 2.2rem;
+  font-family: 'Montserrat';
   padding: 5px 5vw;
   border-radius: 15px;
   border-style: solid;
