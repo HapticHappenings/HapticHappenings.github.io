@@ -33,3 +33,8 @@ main {
   width: 100%;
 }
 
+#logo-block {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
